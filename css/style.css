@@ -1,104 +1,109 @@
-*
-{
-	box-sizing: border-box;
-	font-size: 19px;
-}
-h1
-{
-	margin-bottom: 15px;
-	text-align: center;
-	font-size: 1.75em;
-	
-}
-
-.row
-{
-	width: 100%;
-}
-
-h2
-{
-	width:90px;
-	height: auto;
-	font-size: 1.25em;
-	border: 1px solid black;
-	
-}
-
-.col-lg-3, .col-md-6, .col-md-12, .col
-{
-	background-color:#D3D3D3;
-
-}
-
-.section
-{
-	background-color: #D3D3D3;
-}
-
-.chicken
-{
-	float: right;
-	background-color: blue;
-	
-}
-
-.beef
-{
-	float: right;
-	background-color: blue;
-}
-
-.sushi
-{
-	float: right;
-	background-color: blue;
-	
-}
-
-p
-{
-	margin: 10px;
-	float: left;
-	box-sizing: border-box;
-	text-align: center;	
-	background-color: #D3D3D3;
-
-}
-
-
-
-@media (min-width: 992px)
-{
-	.col-lg-3
+	*
 	{
-		float: left;
-		width: 32%;
+		box-sizing: border-box;
+	}
+
+	h1
+	{
+		text-align: center;
+		color: red;
+	}
+
+	.row
+	{
+		width: 100%;
+	}
+
+	.section
+	{
+		position: relative;
 		border: 1px solid black;
-		margin:5px;
+		margin:0px;
+	}
 
-	}	
-}
-
-@media(min-width:768px) and (max-width: 991px)
-{
-	.col-md-6, .col-md-12
+	.chicken
 	{
-		float:left;
+		background-color: green;
+		position: absolute;
+		top: 0px;
+		right: 0px;
+		margin-top: 0px;
+		margin-right: 0px;
+		border: 1px solid black;
+		text-align: center;
+		width: 130px;
+	}
+
+	.beef
+	{
+		background-color: blue;
+		position: absolute;
+		top: 0px;
+		right: 0px;
+		margin-top: 0px;
+		margin-right: 0px;
+		border: 1px solid black;
+		text-align: center;
+		width: 130px;
+	}
+
+	.sushi
+	{
+		position: absolute;
+		background-color: yellow;
+		top: 0px;
+		right: 0px;
+		margin-top: 0px;
+		margin-right: 0px;
+		border: 1px solid black;
+		text-align: center;
+		width: 130px;
+	}
+
+	p{
+	 margin: 60px 10px 10px 10px;	
+	 width:  90%;
+	}
+
+    .col-lg-3, .col-md-6, .col-md-12, .col
+	{
+		background-color:#D3D3D3;
+		margin:5px;
 		border: 1px solid black;
 
 	}
 
-	.col-md-6
-	{
-		width: 48%;
-		margin:5px;
 
-	}
-	.col-md-12
+	@media (min-width: 992px)
 	{
-		width:100%;
-		margin-top: 5px;
+		.col-lg-3
+		{
+			float: left;
+			width: 32%;
+			height: 100%;
+
+		}	
 	}
+
+	@media(min-width:768px) and (max-width: 991px)
+	{
+		.col-md-6, .col-md-12
+		{
+			float:left;
+		
+
+		}
+
+		.col-md-6
+		{
+			width: 48%;
+			margin:5px;
+			height: 100%;
+		}
+		.col-md-12
+		{
+			width:98%;
+			margin-top: 5px;
+			height: 100%;
+		}
 }
-
